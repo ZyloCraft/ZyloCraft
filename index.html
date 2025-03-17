@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to the world of Zylo Craft You can explore its social media links easily">
+    <meta name="keywords" content="ZyloCraft, Zylo">
+    <title>ZyloCraft</title>
+    <link rel="icon" href="ZyloCraft.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --main-color: #2a2a72;
+            --secondary-color: #009ffd;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(#ffeaff, #3cb5b5, #277575, #aa39a1);                                                            
+            color: white;
+            min-height: 100vh;
+            animation: gradientShift 15s ease infinite;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .profile {
+            text-align: center;
+            margin-bottom: 3rem;
+            animation: fadeIn 1.5s ease;
+        }
+
+        .profile img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 5px solid var(--secondary-color);
+            margin-bottom: 1rem;
+            transition: transform 0.3s ease;
+        }
+
+        .social-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .social-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 1.5rem;
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .social-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+        }
+
+        .social-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(
+                90deg,
+                transparent,
+                rgba(255,255,255,0.2),
+                transparent
+            );
+            transition: 0.5s;
+        }
+
+        .social-card:hover::before {
+            left: 100%;
+        }
+
+        .social-icon {
+            font-size: 2rem;
+            width: 50px;
+            text-align: center;
+        }
+
+        .videos-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .video-card {
+            position: relative;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .video-card:hover {
+            transform: scale(1.05);
+        }
+
+        @keyframes gradientShift {
+            0% {background-position: 0% 50%}
+            50% {background-position: 100% 50%}
+            100% {background-position: 0% 50%}
+        }
+
+        @keyframes fadeIn {
+            from {opacity: 0; transform: translateY(20px);}
+            to {op35ity: 1; trans435m: transl768Y(0);}
+  7/* كود الاستجابة لمختلف أحجام الشاشات */
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+  
+  .profile img {
+    width: 150px;
+    height: 150px;
+  }
+  
+  .social-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .videos-container {
+    grid-template-columns: 1fr;
+  }
+}umns: 1fr;
+  }
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="profile">
+            <img src="Zylo.png" alt="logo test">
+            <h1>ZyloCraft</h1>
+            <p>Welcome to world Zylo</p>
+        </div>
+
+        <div class="social-grid">
+            <div class="social-card" onclick="window.open('https://discord.gg/ru7nkKtHDa')">
+                <i class="social-icon fa-brands fa-discord"></i>
+                <span>Discord</span>
+            </div>
+
+            <div class="social-card" onclick="window.open('https://youtube.com/@zylocraftt?si=lqDQAdj2ThvU9Cjh')">
+                <i class="social-icon fa-brands fa-youtube"></i>
+                <span>YouTube</span>
+            </div>
+
+            <div class="social-card" onclick="window.open('https://www.instagram.com/zylo_herbrine?igsh=cnJ6OXB3eml4NjE5')">
+                <i class="social-icon fa-brands fa-instagram"></i>
+                <span>Instagram</span>
+            </div>
+
+            <div class="social-card" onclick="window.open('https://www.threads.net/@zylo_herbrine')">
+                <i class="social-icon fa-brands fa-Threads"></i>
+                <span>Threads</span>
+            </div>
+
+            <div class="social-card" onclick="window.open('https://x.com/Zylo_Craft?t=_-1TLo007KNcmh5Lkq_2uQ&s=09')">
+                <i class="social-icon fa-brands fa-twitter"></i>
+                <span>X-twitter</span>
+            </div>
+
+            <div class="social-card" onclick="window.open('https://www.tiktok.com/@zylocraft777?_t=ZS-8ubbQew6y6p&_r=1')">
+                <i class="social-icon fa-brands fa-tiktok"></i>
+                <span>Tik tok</span>
+            </div>
+
+            <div class="social-card" onclick="window.open('https://www.deviantart.com/zylocraft')">
+                <i class="social-icon fa-brands fa-deviantart"></i>
+                <span>DeviantArt</span>
+            </div>
+        </div>
+
+        <div class="videos-container" id="videosContainer"></div>
+    </div>
+
+    <script>
+        
+        const YOUTUBE_API_KEY = 'AIzaSyCgIKclelt-1-gGyBuMucY2kUemfEwkFzU'; 
+        const CHANNEL_ID = 'UCV-SWVAHqwlUDiCg6-4W3Wg'; 
+
+        async function fetchVideos() {
+            try {
+                
+                const response = await fetch(
+                    `https://www.googleapis.com/youtube/v3/search?key=${YOUTUBE_API_KEY}&channelId=${CHANNEL_ID}&part=snippet,id&order=date&maxResults=50`
+                );
+                
+                const data = await response.json();
+                const videos = data.items.filter(item => item.id.kind === "youtube#video");
+                return videos;
+            } catch (error) {
+                console.error('Error fetching videos:', error);
+                return [];
+            }
+        }
+
+        
+        function getRandomVideos(videos) {
+            const shuffled = videos.sort(() => 0.5 - Math.random());
+            return shuffled.slice(0, 4);
+        }
+
+        
+        async function createVideoElements() {
+            const container = document.getElementById('videosContainer');
+            const videos = await fetchVideos();
+            const randomVideos = getRandomVideos(videos);
+
+            randomVideos.forEach(video => {
+                const videoCard = document.createElement('div');
+                videoCard.className = 'video-card';
+                videoCard.innerHTML = `
+                    <iframe 
+                        width="100%" 
+                        height="200" 
+                        src="https://www.youtube.com/embed/${video.id.videoId}" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                `;
+                container.appendChild(videoCard);
+            });
+        }
+
+        
+        window.addEventListener('load', () => {
+            createVideoElements();
+            
+            const cards = document.querySelectorAll('.social-card');
+            cards.forEach(card => {
+                card.style.transform = 'translateY(20px)';
+                card.style.opacity = '0';
+                
+                setTimeout(() => {
+                    card.style.transform = 'translateY(0)';
+                    card.style.opacity = '1';
+                }, 200);
+            });
+        });
+    </script>
+</body>
+</html>
+</body>
+</html>
